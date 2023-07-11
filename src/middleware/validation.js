@@ -1,4 +1,4 @@
-import db from "../data/conection"
+import { db } from "../data/conection.js"
 
 export async function checkUser(req, res, next) {
 
@@ -18,13 +18,14 @@ export async function checkUser(req, res, next) {
   }
 }
 
+
 export function checkSchema(schema) {
     return (req, res, next) => {
       const check = schema.validate(req.body, { abortEarly: false });
   
       if (check.error) {
         const checkError = check.error.details.map((e) => e.message);
-        return res.status(422).send(error);
+        return res.status(422).send(checkError);
       }
   
       next();

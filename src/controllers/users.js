@@ -1,5 +1,5 @@
 import bcrypt from "bcrypt";
-import { db } from "./data/conection";
+import  { db }  from "../data/conection.js";
 import { v4 as uuid } from "uuid";
 
 // LOGIN

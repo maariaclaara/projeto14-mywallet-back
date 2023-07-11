@@ -2,11 +2,12 @@
   "name": "projeto14-mywallet-back",
   "version": "1.0.0",
   "type": "module",
-  "main": "./src/App.js",
+  "main": "./src/app.js",
   "scripts": {
-    "dev": "nodemon ./src/App.js",
-    "start": "node ./src/App.js"
+    "dev": "nodemon ./src/app.js",
+    "start": "node ./src/app.js"
   },
+  "keywords": [],
   "dependencies": {
     "bcrypt": "^5.1.0",
     "cors": "^2.8.5",
